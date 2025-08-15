@@ -57,21 +57,4 @@ cp4/
 - Define opções padrão para queries (retry, staleTime)
 - Renderiza o componente UserList
 
-## API
 
-O aplicativo consome a API JSONPlaceholder que retorna dados de usuários fictícios:
-- **Endpoint:** https://jsonplaceholder.typicode.com/users
-- **Método:** GET
-- **Resposta:** Array de objetos com informações de usuários
-
-## Estados da Aplicação
-
-1. **Carregando:** Mostra spinner e texto "Carregando usuários..."
-2. **Sucesso:** Exibe lista de usuários em cards
-3. **Erro:** Mostra mensagem de erro com detalhes
-
-## Configurações do TanStack Query
-
-- **Retry:** 2 tentativas em caso de falha
-- **Stale Time:** 5 minutos (dados considerados frescos por 5 min)
-- **Cache:** Automático para melhor performance
